@@ -1,0 +1,32 @@
+conda create -n "my_environment" python=3.12	- create new env
+
+conda activate "my_environment"			- change to env
+
+pip install <missing-package>			- install package
+
+pip uninstall <package>				- uninstall package
+
+pip install -r requirements.txt			- install packages from requirements.txt
+
+pip freeze					- list of installed packacges in env
+
+conda env list					- list og env
+
+conda env remove -n "my_environment"		- delete env
+
+
+
+pip install pydantic-ai google-genai
+pip install chainlit
+chainlit run app.py
+chainlit run app.py -w                  # Aktiver Wathcmode: Overvåger kodefiler og genstarter ved ændringer
+
+pip install pyinstaller
+pyinstaller --onedir --additional-hooks-dir=. app.py
+nuitka --standalone --onefile app.py
+
+----------------------------------------------------------------------
+requirements.txt :
+dependency1==X.Y.Z
+dependency2==X.Y.Z
+
